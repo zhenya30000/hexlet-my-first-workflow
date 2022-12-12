@@ -1,4 +1,4 @@
-# file: .github/workflows/hello-world.yml
+# file: .github/workflows/hello.yml
 name: say-hello
 # on – определяет события, которые запускают воркфлоу
 on: push
@@ -9,4 +9,5 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
-      - run: ../../make say-hello
+      - run: cd ../../
+      - run: make say-hello
